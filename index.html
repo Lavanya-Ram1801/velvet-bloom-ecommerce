@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VELVET BLOOM — Your Style, Your Story</title>
+  <meta name="description" content="VELVET BLOOM is a demo online boutique for clothing, accessories, jewelry, beauty and lifestyle. Frontend demonstration project.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <!-- Announcement bar -->
+  <div class="announce" role="note">
+    <p>YOUR LITTLE TREAT: FREE SHIPPING ON ORDERS OVER ₹1,499 <span class="announce-demo">· DEMO STORE</span></p>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <button class="icon-btn menu-btn" data-action="open-menu" aria-label="Open menu" aria-haspopup="dialog">
+        <span data-icon="menu"></span>
+      </button>
+
+      <a class="logo" href="#/" aria-label="VELVET BLOOM — home">
+        <svg class="logo-mark" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true" focusable="false">
+          <g>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#D99BAA" transform="rotate(0 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#743B50" opacity=".85" transform="rotate(72 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#D99BAA" transform="rotate(144 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#743B50" opacity=".85" transform="rotate(216 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#D99BAA" transform="rotate(288 32 32)"/>
+            <circle cx="32" cy="32" r="5" fill="#FFF9F5"/>
+          </g>
+        </svg>
+        <span class="logo-word">VELVET<span> BLOOM</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#/" data-nav="home">Home</a></li>
+          <li><a href="#/shop" data-nav="shop">Shop All</a></li>
+          <li><a href="#/shop?cat=clothing" data-nav="clothing">Clothing</a></li>
+          <li><a href="#/shop?cat=accessories" data-nav="accessories">Accessories</a></li>
+          <li><a href="#/shop?cat=jewelry" data-nav="jewelry">Jewelry</a></li>
+          <li><a href="#/shop?cat=beauty" data-nav="beauty">Beauty</a></li>
+          <li><a href="#/shop?filter=new" data-nav="new">New Arrivals</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" data-action="open-search" aria-label="Search products" aria-haspopup="dialog">
+          <span data-icon="search"></span>
+        </button>
+        <a class="icon-btn hide-sm" href="#/orders" aria-label="My orders" data-nav="orders">
+          <span data-icon="user"></span>
+        </a>
+        <a class="icon-btn badge-wrap" href="#/wishlist" aria-label="Wishlist" data-nav="wishlist">
+          <span data-icon="heart"></span>
+          <span class="badge wish-count" hidden>0</span>
+        </a>
+        <button class="icon-btn badge-wrap" id="cart-btn" data-action="open-cart" aria-label="Open shopping bag" aria-haspopup="dialog">
+          <span data-icon="bag"></span>
+          <span class="badge cart-count" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo logo-footer" href="#/" aria-label="VELVET BLOOM — home">
+          <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false">
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#E8B8C3" transform="rotate(0 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#F4DDE3" opacity=".7" transform="rotate(72 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#E8B8C3" transform="rotate(144 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#F4DDE3" opacity=".7" transform="rotate(216 32 32)"/>
+            <ellipse cx="32" cy="18" rx="8" ry="14" fill="#E8B8C3" transform="rotate(288 32 32)"/>
+            <circle cx="32" cy="32" r="5" fill="#743B50"/>
+          </svg>
+          <span class="logo-word">VELVET<span> BLOOM</span></span>
+        </a>
+        <p class="footer-tag">Your Style, Your Story.</p>
+        <p class="footer-note">A frontend demonstration store. No real products are sold and no payments are processed.</p>
+      </div>
+
+      <nav aria-label="Shop links">
+        <h2 class="footer-h">Shop</h2>
+        <ul>
+          <li><a href="#/shop">Shop All</a></li>
+          <li><a href="#/shop?filter=new">New Arrivals</a></li>
+          <li><a href="#/shop?filter=bestseller">Best Sellers</a></li>
+          <li><a href="#/shop?cat=clothing">Clothing</a></li>
+          <li><a href="#/shop?cat=accessories">Accessories</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Help links">
+        <h2 class="footer-h">Help</h2>
+        <ul>
+          <li><a href="#/info/contact">Contact</a></li>
+          <li><a href="#/info/shipping">Shipping Information</a></li>
+          <li><a href="#/info/returns">Returns</a></li>
+          <li><a href="#/info/faqs">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Account links">
+        <h2 class="footer-h">Account</h2>
+        <ul>
+          <li><a href="#/wishlist">Wishlist</a></li>
+          <li><a href="#/orders">My Orders</a></li>
+          <li><button class="link-btn" data-action="open-cart">Shopping Cart</button></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Social links">
+        <h2 class="footer-h">Social</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+        </ul>
+        <p class="footer-note small">Links open each platform's home page; VELVET BLOOM has no official accounts.</p>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> VELVET BLOOM. Demo project — sample products, ratings and policies only.</p>
+    </div>
+  </footer>
+
+  <!-- Overlays -->
+  <div class="overlay overlay-right" id="cart-drawer" hidden>
+    <div class="overlay-backdrop" data-action="close-overlay"></div>
+    <aside class="overlay-panel drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+      <div class="panel-head">
+        <h2 id="cart-title">Your Bag<span id="cart-title-count"></span></h2>
+        <button class="icon-btn" data-action="close-overlay" aria-label="Close shopping bag"><span data-icon="x"></span></button>
+      </div>
+      <div class="drawer-body" id="cart-body"></div>
+      <div class="drawer-foot" id="cart-foot"></div>
+    </aside>
+  </div>
+
+  <div class="overlay overlay-left" id="mobile-menu" hidden>
+    <div class="overlay-backdrop" data-action="close-overlay"></div>
+    <aside class="overlay-panel drawer drawer-left" role="dialog" aria-modal="true" aria-labelledby="menu-title" tabindex="-1">
+      <div class="panel-head">
+        <h2 id="menu-title">Menu</h2>
+        <button class="icon-btn" data-action="close-overlay" aria-label="Close menu"><span data-icon="x"></span></button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <ul>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/shop">Shop All</a></li>
+          <li><a href="#/shop?cat=clothing">Clothing</a></li>
+          <li><a href="#/shop?cat=accessories">Accessories</a></li>
+          <li><a href="#/shop?cat=jewelry">Jewelry</a></li>
+          <li><a href="#/shop?cat=beauty">Beauty</a></li>
+          <li><a href="#/shop?cat=lifestyle">Lifestyle</a></li>
+          <li><a href="#/shop?filter=new">New Arrivals</a></li>
+          <li class="mobile-sep"><a href="#/wishlist">Wishlist</a></li>
+          <li><a href="#/orders">My Orders</a></li>
+        </ul>
+        <button class="btn btn-outline btn-block" data-action="open-search">Search products</button>
+      </nav>
+    </aside>
+  </div>
+
+  <div class="overlay overlay-top" id="search-overlay" hidden>
+    <div class="overlay-backdrop" data-action="close-overlay"></div>
+    <div class="overlay-panel search-panel" role="dialog" aria-modal="true" aria-label="Search products" tabindex="-1">
+      <form id="search-form" role="search" autocomplete="off">
+        <label class="sr-only" for="search-input">Search products</label>
+        <span class="search-icon" data-icon="search"></span>
+        <input id="search-input" type="search" placeholder="Search dresses, pearls, bags…" enterkeyhint="search">
+        <button type="button" class="icon-btn" data-action="search-clear" aria-label="Clear search"><span data-icon="x"></span></button>
+        <button type="button" class="btn btn-ghost" data-action="close-overlay">Close</button>
+      </form>
+      <div id="search-results" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="overlay overlay-center" id="modal" hidden>
+    <div class="overlay-backdrop" data-action="close-overlay"></div>
+    <div class="overlay-panel modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
