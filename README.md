@@ -284,7 +284,7 @@ Potential future improvements include:
 
 ### Designed with creativity. Built with code. 💗
 
-**Created by Lavanya Ram**
+**Created by Lavanya **
 
 I built VELVET BLOOM as a personal frontend development project to explore how design, functionality, and user experience can come together in a modern e-commerce interface.
 
