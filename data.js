@@ -243,7 +243,7 @@ const PRODUCTS = [
     p04: "webp",
     p05: "jpg",
     p06: "jpg",
-    p07: "webp",
+    p07: "jpg",
     p08: "jpg",
     p09: "jpg",
     p10: "webp",
