@@ -233,8 +233,68 @@ const PRODUCTS = [
     keywords: ['jewelry', 'jewellery', 'organizer', 'organiser', 'box', 'storage', 'ring', 'travel'],
     details: ['Faux-leather finish', 'Soft velvet interior', 'Fits rings, earrings and a few necklaces'],
   },
-].map((p) => ({
-  ...p,
-  image: `assets/images/${p.id}.svg`,
-  images: [`assets/images/${p.id}.svg`, `assets/images/${p.id}-b.svg`],
-}));
+].map((p) => {
+
+  // Main product image extensions
+  const mainImages = {
+    p01: "webp",
+    p02: "webp",
+    p03: "webp",
+    p04: "webp",
+    p05: "jpg",
+    p06: "jpg",
+    p07: "webp",
+    p08: "jpg",
+    p09: "jpg",
+    p10: "webp",
+    p11: "jpg",
+    p12: "jpg",
+    p13: "jpg",
+    p14: "webp",
+    p15: "webp",
+    p16: "webp",
+    p17: "jpg",
+    p18: "jpg",
+    p19: "webp",
+    p20: "jpg",
+    p21: "jpg",
+    p22: "jpg"
+  };
+
+  // Additional product gallery image extensions
+  const galleryImages = {
+    p01: "jpg",
+    p02: "webp",
+    p03: "jpg",
+    p04: "jpg",
+    p05: "jpg",
+    p06: "jpg",
+    p07: "jpg",
+    p08: "jpg",
+    p09: "jpg",
+    p10: "jpg",
+    p11: "jpg",
+    p12: "jpg",
+    p13: "jpg",
+    p14: "jpg",
+    p15: "jpg",
+    p16: "jpg",
+    p17: "jpg",
+    p18: "avif",
+    p19: "jpg",
+    p20: "webp",
+    p21: "jpg",
+    p22: "jpg"
+  };
+
+  const mainImage = `assets/images/${p.id}.${mainImages[p.id]}`;
+
+  const secondImage = `assets/images/${p.id}-b.${galleryImages[p.id]}`;
+
+  return {
+    ...p,
+    image: mainImage,
+    images: [mainImage, secondImage]
+  };
+
+});
